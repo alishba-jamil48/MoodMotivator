@@ -1,0 +1,171 @@
+/* Reset and Base Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Dark Mode Toggle */
+body.dark {
+  background-color: #121212;
+  color: #f5f5f5;
+}
+
+/* Container */
+.app-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 30px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+body.dark .app-container {
+  background: #1e1e1e;
+  box-shadow: 0 0 25px rgba(255,255,255,0.05);
+}
+
+/* Title */
+.app-title {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #444;
+}
+
+body.dark .app-title {
+  color: #fff;
+}
+
+/* Quote Card */
+.quote-card {
+  background: #e0f7fa;
+  padding: 30px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: center;
+  border: 2px dashed #00acc1;
+}
+
+body.dark .quote-card {
+  background: #263238;
+  border-color: #00e5ff;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.quote-mood {
+  font-size: 1rem;
+  color: #777;
+}
+
+/* Mood Buttons */
+.mood-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.mood-button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #00acc1;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mood-button:hover {
+  background: #008ba3;
+}
+
+/* Custom Mood */
+.custom-mood {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.custom-mood input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  flex: 1;
+}
+
+.custom-mood button {
+  background: #7e57c2;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.custom-mood button:hover {
+  background: #5e35b1;
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.controls button {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: #26a69a;
+  color: #fff;
+}
+
+.controls button:hover {
+  background: #00796b;
+}
+
+/* Music Button */
+#toggle-music {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background: #ff7043;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#toggle-music:hover {
+  background: #e64a19;
+}
+
+
+
+
+
+
+
+
